@@ -96,7 +96,7 @@ I configured the key bindings that I like. They can all be found in the *config.
 # Status Bar
 By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several BASH script(s). Here is what mine looks like:
 
-![](https://hostr.co/file/GENGctapHBA9/dwm-statusbar.png)
+![](https://hostr.co/file/jHQRjOaMMQ9t/dwm-statusbar.png)
 
 The different scripts for my bar are not included in this repo but can be found [here](https://github.com/GSquad934/dotfiles/tree/master/local/bin/statusbar). <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to your *.xinitrc*) while all the other ones are used to retrieve the different information.
 
