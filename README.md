@@ -39,6 +39,7 @@ sudo make clean install
 ```
 
 If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). If you want a nicer terminal than XTerm, you can also check out [my build of ST](https://github.com/GSquad934/st.git).
+
 <u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap](https://github.com/GSquad934/bootstrap) script (you can just DWM which will also install dmenu and st).
 
 ## Running DWM
