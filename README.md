@@ -39,9 +39,10 @@ sudo make clean install
 ```
 
 If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). If you want a nicer terminal than XTerm, you can also check out [my build of ST](https://github.com/GSquad934/st.git).
+<u>** Note</u>: this DWM installation can be fully automated by using my [bootstrap](https://github.com/GSquad934/bootstrap) script (you can just DWM which will also install dmenu and st).
 
 ## Running DWM
-If you don't use a login manager and need some inspiration for your *.xinitrc*, you can check out [mine](https://github.com/GSquad934/dotfiles/blob/master/config/X11/xinitrc).
+If you don't use a login manager, you can start the graphical environment with the command *startx* (package "*xorg-xinit*" required) and a properly configured *.xinitrc* file. If you want some inspiration for your *.xinitrc*, you can check out [mine](https://github.com/GSquad934/dotfiles/blob/master/config/X11/xinitrc).
 If you use a login manager (such as *lightdm*), make sure to create a *dwm.desktop* file in */usr/share/xsessions/*. The file should contain the following:
 
 ```
