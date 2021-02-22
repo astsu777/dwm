@@ -1,6 +1,9 @@
 # My build of DWM v6.2
+### Plain DWM, without my status bar:
+![](https://hostr.co/file/eyxPVmx6tchb/dwm-nodotfiles-nobar.png)
 
-![](https://hostr.co/file/Hqsf3ZJq0KmD/dwm-showcase.png)
+### DWM with my status bar:
+![](https://hostr.co/file/FuVucpNJHOSO/dwm.png)
 
 This repository hosts the source code of my build of DWM (Dynamic Window Manager) from the [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I liked. The list applied patches can be found in the *patches* folder. It features the following settings:
 
@@ -41,7 +44,7 @@ sudo make clean install
 
 <u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap](https://github.com/GSquad934/bootstrap) script (you can just DWM which will also install dmenu and st).
 
-## Running DWM
+# Running DWM
 If you don't use a login manager, you can start the graphical environment with the command *startx* (package "*xorg-xinit*" required) and a properly configured *.xinitrc* file. If you want some inspiration for your *.xinitrc*, you can check out [mine](https://github.com/GSquad934/dotfiles/blob/master/config/X11/xinitrc).
 If you use a login manager (such as *lightdm*), make sure to create a *dwm.desktop* file in */usr/share/xsessions/*. The file should contain the following:
 
