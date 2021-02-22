@@ -7,7 +7,6 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Only active tags are visible (9 are available)
 * Resizable gaps between screen edges and windows that can be toggled/resized with key bindings
 * Multiple layouts are available: tile (master/stack), monocle, bottom stack + horizontal, centered master, spiral, dwindle, deck, grid (+ horizontal) and floating
-* A simple status bar configured with a BASH script. The different scripts for the bar are not included in this repo but can be found [here](https://github.com/GSquad934/dotfiles/tree/master/local/bin/statusbar). <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one triggering the status bar (add it to your *.xinitrc*)
 * Adjustable bar height
 * Ability to configure different layouts per tag
 * Window swallowing. Example: a GUI program launched from the terminal will result in the terminal window to be hidden
@@ -20,7 +19,7 @@ The following packages are necessary in order to run this build of DWM properly:
 
 * ttf-jetbrains-mono
 * ttf-joypixels
-* libxft-bgra (required only if you use my bar)
+* libxft-bgra (regular *libxft* won't work if you use my status bar --> DWM will crash)
 * dmenu
 * st
 * trayer (optional, only if you want a system tray)
@@ -94,6 +93,21 @@ I configured the key bindings that I like. They can all be found in the *config.
 | `MODKEY + ALT + t` | displays the system tray |
 | `MODKEY + ALT + SHIFT + t` | closes the system tray |
 
+# Status Bar
+By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several BASH script(s). Here is what mine looks like:
+
+![](https://hostr.co/file/GENGctapHBA9/dwm-statusbar.png)
+
+The different scripts for my bar are not included in this repo but can be found [here](https://github.com/GSquad934/dotfiles/tree/master/local/bin/statusbar). <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to your *.xinitrc*) while all the other ones are used to retrieve the different information.
+
+# Wallpapers
+I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. I store all my wallpapers in a single directory and then starts *feh* when running X with the following commands in my *.xinitrc*:
+
+```
+feh --bg-fill --no-fehbg --randomize <PATH_TO_WALLPAPERS_DIRECTORY>
+```
+
+If you want a set of nice wallpapers, I have some stored in this [repository](https://github.com/GSquad934/wallpapers).
 
 # Contact
 You can always reach out to me:
