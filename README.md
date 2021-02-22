@@ -21,12 +21,14 @@ The following packages are necessary in order to run this build of DWM properly:
 * ttf-jetbrains-mono
 * ttf-joypixels
 * libxft-bgra (required only if you use my bar)
-* dmenu (recommended)
-* xterm (recommended)
+* dmenu
+* st
 * trayer (optional, only if you want a system tray)
 * xlock (optional, only if you want a lock screen)
 
-If you don't want to use custom emojis in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *xterm* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. *trayer* is totally optional but is the one I chose to hard-code in my DWM configuration.
+If you don't want to use custom emojis in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. *trayer* is totally optional but is the one I chose to hard-code in my DWM configuration.
+
+If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st.git) for a nice terminal emulator.
 
 # Installation
 If you don't use my dotfiles, it is necessary to configure DWM to launch your preferred applications. In order to do this, modify the *config.def.h* file and look at the section starting at line **#162**: there are commented lines with several examples of applications (GUI & TUI). Simply modify these lines (and uncomment them) and adjust the key bindings and the commands to run. Everything is commented out because I actually use SXHKD to manage my applications.
@@ -37,8 +39,6 @@ git clone --depth 1 https://github.com/GSquad934/dwm.git
 cd dwm
 sudo make clean install
 ```
-
-If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). If you want a nicer terminal than XTerm, you can also check out [my build of ST](https://github.com/GSquad934/st.git).
 
 <u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap](https://github.com/GSquad934/bootstrap) script (you can just DWM which will also install dmenu and st).
 
