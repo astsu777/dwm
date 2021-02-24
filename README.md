@@ -1,6 +1,6 @@
 # My build of DWM v6.2
 ### Plain DWM, without my status bar:
-![](https://hostr.co/file/eyxPVmx6tchb/dwm-nodotfiles-nobar.png)
+![](https://hostr.co/file/VqY6xoE3Xcjy/dwm-nodotfiles-nobar.png)
 
 ### DWM with my status bar:
 ![](https://hostr.co/file/FuVucpNJHOSO/dwm.png)
