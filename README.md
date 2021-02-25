@@ -17,6 +17,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * If you want to use DWMBlocks (I don't), this build is already patched to work with signal updating
 * Ability to display coloured unicode characters such as emoticons
 * The status bar defined with 'xsetroot' remains on a single monitor (primary one by default)
+* Supports EWMH to allow window switching with rofi even if a window is on another tag/monitor (window gets the focus)
 
 # Dependencies
 The following packages are necessary in order to run this build of DWM properly:
