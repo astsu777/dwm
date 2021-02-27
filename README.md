@@ -5,7 +5,7 @@
 ### DWM with my status bar:
 ![](https://hostr.co/file/FuVucpNJHOSO/dwm.png)
 
-This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I liked. The list of applied patches can be found in the *patches* folder. It features:
+This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
 * Only active tags are visible (9 are available on every screen)
 * Resizable gaps between screen edges and windows that can be toggled/resized with key bindings
