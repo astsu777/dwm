@@ -1,9 +1,9 @@
 # My build of DWM v6.2
 ### Plain DWM, without my status bar:
-![](https://imgshare.io/images/2021/02/24/dwm-nodotfiles-nobar.png)
+![](https://hostr.co/file/2tDb595h4CXs/dwm_nobar.png)
 
 ### DWM with my status bar:
-![](https://hostr.co/file/FuVucpNJHOSO/dwm.png)
+![](https://hostr.co/file/dUvhEAmWzUGW/dwm.png)
 
 This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
