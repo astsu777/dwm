@@ -26,12 +26,15 @@ The following packages are necessary in order to run this build of DWM properly:
 * ttf-jetbrains-mono
 * ttf-joypixels
 * libxft-bgra (regular *libxft* won't work if you use my status bar --> DWM will crash)
-* dmenu
-* st
+
+The following software are not mandatory but recommended:
+
+* dmenu (hard-coded run launcher)
+* st (hard-coded terminal emulator)
 * trayer (optional, only if you want a system tray)
 * xlock (optional, only if you want a lock screen)
 
-If you don't want to use custom emojis in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. *trayer* is totally optional but is the one I chose to hard-code in my DWM configuration.
+If you don't want to use custom emojis in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. Every option can be customized by modifying the *config.def.h* file.
 
 If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st.git) for a nice terminal emulator.
 
@@ -46,7 +49,7 @@ cd dwm
 sudo make clean install
 ```
 
-<u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap](https://github.com/GSquad934/bootstrap) script.
+<u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap script](https://github.com/GSquad934/bootstrap).
 
 # Running DWM
 If you don't use a login manager, you can start the graphical environment with the *startx* command (package "*xorg-xinit*" required) and a properly configured *.xinitrc* file. If you want some inspiration for your *.xinitrc*, you can check out [mine](https://github.com/GSquad934/dotfiles/blob/master/config/X11/xinitrc).
