@@ -39,7 +39,7 @@ If you don't want to use custom emojis in the status bar, there is no need for p
 If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st.git) for a nice terminal emulator.
 
 # Installation
-If you don't use my dotfiles, it is necessary to configure DWM to launch your preferred applications. In order to do this, modify the *config.def.h* file and look at the section starting at line **#162**: there are commented lines with several examples of applications (GUI & TUI). Simply modify these lines (and uncomment them) and adjust the key binding/commands to run. Everything is commented out because I actually use SXHKD to manage my applications.
+If you don't use my dotfiles, it is necessary to configure DWM to launch your preferred applications. In order to do this, modify the *config.def.h* file and look at the section starting at line **#162**: there are commented lines with several examples of applications (GUI & TUI). Simply modify these lines (and uncomment them) and adjust the key binding/commands to run. Everything is commented out because I actually use *SXHKD* to manage my applications.
 
 Once you are ready to install DWM, type the following commands:
 
