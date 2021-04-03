@@ -17,7 +17,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Ability to display colored unicode characters such as emoticons
 * The status bar defined with 'xsetroot' remains on a single monitor (primary one by default)
 * Supports EWMH to allow window switching with rofi even if a window is on another tag/monitor (window gets the focus)
-* Toggles floating/fullscreen modes for the focused window
+* Toggles floating/fullscreen/sticky modes for the focused window
 * If you want to use DWMBlocks (I don't), this build is already patched to work with signal updating
 
 # Dependencies
@@ -101,6 +101,7 @@ I configured the key bindings that I like. They are all configured in the *confi
 | `MODKEY + SHIFT + Tab` | cycles to the previous layout |
 | `MODKEY + SHIFT + Space` | toggles floating mode for focused window |
 | `MODKEY + SHIFT + f` | toggles fullscreen mode for focused window |
+| `MODKEY + SHIFT + s` | toggles sticky mode for focused window |
 | `MODKEY + Space` | toggles floating |
 | `MODKEY + ALT + l` | locks the screen |
 | `MODKEY + ALT + t` | displays the system tray |
