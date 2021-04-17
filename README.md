@@ -32,11 +32,11 @@ The following software are not mandatory but recommended:
 * dmenu (hard-coded run launcher)
 * st (hard-coded terminal emulator)
 * trayer (optional, only if you want a system tray)
-* xlock (optional, only if you want a lock screen)
+* slock (optional, only if you want a lock screen)
 
 If you don't want to use custom emojis in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. Every option can be customized by modifying the *config.def.h* file.
 
-If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st.git) for a nice terminal emulator.
+If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st) for a nice terminal emulator. Finally, [my build of *slock*](https://github.com/GSquad934/slock) can be used as a nice lock screen.
 
 # Installation
 If you don't use my dotfiles, it is necessary to configure DWM to launch your preferred applications. In order to do this, modify the *config.def.h* file and look at the section starting at line **#162**: there are commented lines with several examples of applications (GUI & TUI). Simply modify these lines (and uncomment them) and adjust the key binding/commands to run. Everything is commented out because I actually use *SXHKD* to manage my applications.
