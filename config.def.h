@@ -43,6 +43,7 @@ static const Rule rules[] = {
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ NULL,    NULL,     "Picture-in-Picture",           0,         1,          0,           0,        -1 },
 	{ NULL,    NULL,     "Picture in picture",           0,         1,          0,           0,        -1 },
+	{ NULL,    NULL,     "galculator",           0,         1,          0,           0,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
 	{ "St",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ "Alacritty",      NULL,     NULL,           0,         0,          1,           0,        -1 },
