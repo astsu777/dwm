@@ -81,6 +81,8 @@ I configured the key bindings that I like. They are all configured in the *confi
 | `MODKEY + SHIFT + r` | reloads dwm |
 | `MODKEY + SHIFT + q` | quits dwm |
 | `MODKEY + 1-9` | switch focus to tag (1 to 9) |
+| `MODKEY + CTRL + 1-9` | show windows of multiple tags (1 to 9) |
+| `MODKEY + CTRL + SHIFT + 1-9` | show focused window on multiple tags (1 to 9) |
 | `MODKEY + SHIFT + 1-9` | send focused window to tag (1 to 9) |
 | `MODKEY + j` | focus stack +1 (switches focus between windows in the stack) |
 | `MODKEY + k` | focus stack -1 (switches focus between windows in the stack) |
