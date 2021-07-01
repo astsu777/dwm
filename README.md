@@ -1,9 +1,9 @@
 # My build of DWM v6.2
 ### Plain DWM, without my status bar:
-![](https://hostr.co/file/2tDb595h4CXs/dwm_nobar.png)
+![](https://i.postimg.cc/1tPhTBHB/screenshot-20210324-007.png)
 
 ### DWM with my status bar:
-![](https://hostr.co/file/dUvhEAmWzUGW/dwm.png)
+![](https://i.postimg.cc/HsPmxQYW/screenshot-20210324-008.png)
 
 This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
@@ -112,7 +112,7 @@ I configured the key bindings that I like. They are all configured in the *confi
 # Status Bar
 By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several BASH script(s). Here is what mine looks like:
 
-![](https://hostr.co/file/adYGfR8cLzbF/dwmbar.png)
+![](https://i.postimg.cc/kXjJb0cm/screenshot-20210324-009.png)
 
 * 📦 0 : indicates how many updates are available (script: *dwmupdates*)
 * 🖥 10%: indicates the CPU usage (script: *dwmcpu*)
