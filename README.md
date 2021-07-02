@@ -116,7 +116,7 @@ By default, DWM has a very plain bar with almost no information in it. The statu
 
 * 📦 0 : indicates how many updates are available (script: *dwmupdates*)
 * 📰 20 : indicates the number of unread news if newsboat is installed (script: *dwmnews*)
-* 🖥260%: indicates the CPU usa e(script: *dwmcpu*)
+* 🖥 26% : indicates the CPU usage (script: *dwmcpu*)
 * 🧠 4% : indicates the percentage or used RAM (script: *dwmmemory*)
 * ⬇  4.1KB ⬆  1.6KB : indicates the download/upload network traffic usage. It will automatically change B/KB/MB depending on the usage (script: *dwmnet*)
 * 💾 54G/103G : indicates the disk space usage where "/" is mounted. Other disks can be added by modifying the script (script: *dwmdisk*)
