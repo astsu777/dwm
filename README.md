@@ -120,7 +120,7 @@ By default, DWM has a very plain bar with almost no information in it. The statu
 * 🧠 4% : indicates the percentage or used RAM (script: *dwmmemory*)
 * ⬇  4.1KB ⬆  1.6KB : indicates the download/upload network traffic usage. It will automatically change B/KB/MB depending on the usage (script: *dwmnet*)
 * 💾 54G/103G : indicates the disk space usage where "/" is mounted. Other disks can be added by modifying the script (script: *dwmdisk*)
-* 🌡57.2°C : indicates the CPU temperatur when sensors can be read (script: *dwmtemp*)
+* 🌡5752°C : indicates the CPU temperatur when sensors can be read (script: *dwmtemp*)
 * 🔋 99% : indicates the battery level when a battery is detected (script: *dwmbattery*)
 * 🔊 30% : indicates the volume level. The icon will change depending on the volume level (script: *dwmvol*)
 * 🕒 Fri July 02 20:38 : indicates the current day, date and time in 24H format (script: *dwmclock*)
