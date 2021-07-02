@@ -18,7 +18,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * The status bar defined with 'xsetroot' remains on a single monitor (primary one by default)
 * Supports EWMH to allow window switching with rofi even if a window is on another tag/monitor (window gets the focus)
 * Toggles floating/fullscreen/sticky modes for the focused window
-* If you want to use DWMBlocks (I don't), this build is already patched to work with signal updating
+* If you want to use *DWMBlocks*, this build is already patched to work with signal updating
 
 # Dependencies
 The following packages are necessary in order to run this build of DWM properly:
@@ -110,7 +110,7 @@ I configured the key bindings that I like. They are all configured in the *confi
 | `MODKEY + ALT + SHIFT + t` | closes the system tray |
 
 # Status Bar
-By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several BASH script(s). Here is what mine looks like:
+By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several *BASH* script(s). Here is what mine looks like:
 
 ![](https://i.postimg.cc/kXjJb0cm/screenshot-20210324-009.png)
 
