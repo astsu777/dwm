@@ -112,16 +112,18 @@ I configured the key bindings that I like. They are all configured in the *confi
 # Status Bar
 By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several *BASH* script(s). Here is what mine looks like:
 
-![](https://i.postimg.cc/kXjJb0cm/screenshot-20210324-009.png)
+![](https://i.postimg.cc/65hsMTRg/screenshot-20210702-022.png)
 
 * 📦 0 : indicates how many updates are available (script: *dwmupdates*)
-* 🖥 10%: indicates the CPU usage (script: *dwmcpu*)
-* 🧠 1.61GB/15.58GB : indicates the RAM usage (script: *dwmmemory*)
-* ⬇  274B ⬆  670B : indicates the download/upload network traffic usage. It will automatically change B/KB/MB depending on the usage (script: *dwmnet*)
-* 💾 40.0G (18%) : indicates the disk space usage where "/" is mounted. Other disks can be added by modifying the script (script: *dwmdisk*)
-* 🌡 25.2 : indicates the CPU temperature. (script: *dwmtemp*)
-* 🔊 60% : indicates the volume level. The icon will change depending on the volume level (script: *dwmvol*)
-* 🕒 Wed, February 24 21:39 : indicates the current day, date and time in 24H format (script: *dwmclock*)
+* 📰 20 : indicates the number of unread news if newsboat is installed (script: *dwmnews*)
+* 🖥260%: indicates the CPU usa e(script: *dwmcpu*)
+* 🧠 4% : indicates the percentage or used RAM (script: *dwmmemory*)
+* ⬇  4.1KB ⬆  1.6KB : indicates the download/upload network traffic usage. It will automatically change B/KB/MB depending on the usage (script: *dwmnet*)
+* 💾 54G/103G : indicates the disk space usage where "/" is mounted. Other disks can be added by modifying the script (script: *dwmdisk*)
+* 🌡57.2°C : indicates the CPU temperatur when sensors can be read (script: *dwmtemp*)
+* 🔋 99% : indicates the battery level when a battery is detected (script: *dwmbattery*)
+* 🔊 30% : indicates the volume level. The icon will change depending on the volume level (script: *dwmvol*)
+* 🕒 Fri July 02 20:38 : indicates the current day, date and time in 24H format (script: *dwmclock*)
 
 The different scripts for my bar are not included in this repo but can be found [here](https://github.com/GSquad934/dotfiles/tree/master/local/bin/statusbar). <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
 
