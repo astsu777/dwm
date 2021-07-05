@@ -171,8 +171,8 @@ static Key keys[] = {
 
 	/* APPLICATIONS KEYBINDIGS (SUPER + ALT + KEY) */
 	/* All applications are ran with SXHKD */
-    { MODKEY|Mod1Mask,        XK_t,    spawn,          SHCMD("trayer --edge bottom --SetDockType true --SetPartialStrut true --transparent true --alpha 256 --tint 0x000000 --expand true --padding 1 --monitor primary --iconspacing 5") },
-    { MODKEY|Mod1Mask|ShiftMask,        XK_t,    spawn,          SHCMD("killall trayer") },
+    { MODKEY|ControlMask,        XK_t,    spawn,          SHCMD("trayer --edge bottom --SetDockType true --SetPartialStrut true --transparent true --alpha 256 --tint 0x000000 --expand true --padding 1 --monitor primary --iconspacing 5") },
+    { MODKEY|ControlMask|ShiftMask,        XK_t,    spawn,          SHCMD("killall trayer") },
     { MODKEY|Mod1Mask,        XK_l,    spawn,          SHCMD("slock") },
     /* { MODKEY|Mod1Mask,        XK_w,    spawn,          CMD("brave") }, */
 	/* { MODKEY|Mod1Mask,        XK_c,    spawn,          CMD("alacritty -e mocp") }, */

@@ -106,8 +106,8 @@ I configured the key bindings that I like. They are all configured in the *confi
 | `MODKEY + SHIFT + s` | toggles sticky mode for focused window |
 | `MODKEY + Space` | toggles floating |
 | `MODKEY + ALT + l` | locks the screen |
-| `MODKEY + ALT + t` | displays the system tray |
-| `MODKEY + ALT + SHIFT + t` | closes the system tray |
+| `MODKEY + CTRL + t` | displays the system tray |
+| `MODKEY + CTRL + SHIFT + t` | closes the system tray |
 
 # Status Bar
 By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several *BASH* script(s). Here is what mine looks like:
