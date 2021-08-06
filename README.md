@@ -19,6 +19,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Supports EWMH to allow window switching with rofi even if a window is on another tag/monitor (window gets the focus)
 * Toggles floating/fullscreen/sticky modes for the focused window
 * If you want to use *DWMBlocks*, this build is already patched to work with signal updating
+* An alternative theme can be used with the file *config.def.h.gruvbox* instead of the original *config.def.h*
 
 # Dependencies
 The following packages are necessary in order to run this build of DWM properly:
