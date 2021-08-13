@@ -1,8 +1,4 @@
 # My build of DWM v6.2
-### Plain DWM, without my status bar:
-![](https://i.postimg.cc/1tPhTBHB/screenshot-20210324-007.png)
-
-### DWM with my status bar:
 ![](https://i.postimg.cc/HsPmxQYW/screenshot-20210324-008.png)
 
 This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
@@ -126,7 +122,7 @@ By default, DWM has a very plain bar with almost no information in it. The statu
 * 🌩️ +20°C : indicates the current weather (script: *dwmweather*)
 * 🕒 Sat August 07 18:35 : indicates the current day, date and time in 24H format (script: *dwmclock*)
 
-The different scripts for my bar are not included in this repo but can be found [here](https://github.com/GSquad934/dotfiles/tree/master/local/bin/statusbar). <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
+The different scripts for the bar are included in the *statusbar* folder. <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
 
 # Wallpapers
 I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. I store all my wallpapers in a single directory and then starts *feh* when running X with the following command:
