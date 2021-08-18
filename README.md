@@ -122,7 +122,9 @@ By default, DWM has a very plain bar with almost no information in it. The statu
 * 🌩️ +20°C : indicates the current weather (script: *dwmweather*)
 * 🕒 Sat August 07 18:35 : indicates the current day, date and time in 24H format (script: *dwmclock*)
 
-The different scripts for the bar are included in the *statusbar* folder. <u>**Note**</u>: these scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
+The different scripts for the bar are included in the *statusbar* folder. These scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
+
+<u>**Note**</u>: the folder called *statusbar-txt* contain script that will only display text and no emojis. This is useful on systems where *libxft-bgra* cannot be installed.
 
 # Wallpapers
 I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. I store all my wallpapers in a single directory and then starts *feh* when running X with the following command:
