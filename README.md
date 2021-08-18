@@ -20,7 +20,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 The following packages are necessary in order to run this build of DWM properly:
 
 * ttf-jetbrains-mono
-* ttf-joypixels
+* noto-fonts-emoji
 * libxft-bgra (regular *libxft* won't work if you use my status bar --> DWM will crash)
 
 The following software are not mandatory but recommended:
