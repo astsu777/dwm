@@ -12,7 +12,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Ability to rotate windows in the stack (easy to re-arrange windows in any layouts)
 * Ability to display colored unicode characters such as emoticons
 * The status bar defined with 'xsetroot' remains on a single monitor (primary one by default)
-* Supports EWMH to allow window switching with rofi even if a window is on another tag/monitor (window gets the focus)
+* Supports EWMH to allow window switching with *rofi* even if a window is on another tag/monitor (window gets the focus)
 * Toggles floating/fullscreen/sticky modes for the focused window
 * If you want to use *DWMBlocks*, this build is already patched to work with signal updating
 
@@ -30,7 +30,7 @@ The following software are not mandatory but recommended:
 * trayer (optional, only if you want a system tray)
 * slock (optional, only if you want a lock screen)
 
-If you don't want to use custom emojis in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. Every option can be customized by modifying the *config.def.h* file.
+If you don't want to use custom emoji in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. Every option can be customized by modifying the *config.def.h* file.
 
 If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st) for a nice terminal emulator. Finally, [my build of *slock*](https://github.com/GSquad934/slock) can be used as a nice lock screen.
 
@@ -124,7 +124,7 @@ By default, DWM has a very plain bar with almost no information in it. The statu
 
 The different scripts for the bar are included in the *statusbar* folder. These scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
 
-<u>**Note**</u>: the folder called *statusbar-txt* contain script that will only display text and no emojis. This is useful on systems where *libxft-bgra* cannot be installed.
+<u>**Note**</u>: the folder called *statusbar-txt* contain script that will only display text and no emoji. This is useful on systems where *libxft-bgra* cannot be installed.
 
 # Wallpapers
 I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. I store all my wallpapers in a single directory and then starts *feh* when running X with the following command:
