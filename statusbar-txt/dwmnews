@@ -1,4 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env bash
+#===================================================
+# Author: Gaetan (gaetan@ictpourtous.com)
+# Creation: Sat Aug 2021 21:55:24
+# Last modified: Sat Aug 2021 21:55:24
+# Version: 1.0
+#
+# Description: print unread news from Newsboat
+#===================================================
 news=$(newsboat -x print-unread | awk '{print $1}')
 icon="📰"
 printf "%s %s \\n"  "N:" "$news"

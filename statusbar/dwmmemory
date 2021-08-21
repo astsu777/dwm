@@ -1,5 +1,12 @@
-#!/bin/bash
-# free --mebi | sed -n '2{p;q}' | awk '{printf ("🧠 %2.2fG/%2.2fG\n ", ( $3 / 1024), ($2 / 1024))}'
+#!/usr/bin/env sh
+#===================================================
+# Author: Gaetan (gaetan@ictpourtous.com)
+# Creation: Sat Aug 2021 21:54:19
+# Last modified: Sat Aug 2021 21:54:19
+# Version: 1.0
+#
+# Description: print the current RAM usage
+#===================================================
 usage=$(free -t | awk 'NR == 2 {print $3/$2*100}' | cut -d'.' -f1)
 icon="🧠"
 printf "%s %s \\n" "$icon" "$usage%"

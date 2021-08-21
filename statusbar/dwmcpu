@@ -1,4 +1,12 @@
-##!/bin/bash
+#!/usr/bin/env sh
+#===================================================
+# Author: Gaetan (gaetan@ictpourtous.com)
+# Creation: Sat Aug 2021 21:53:00
+# Last modified: Sat Aug 2021 21:53:00
+# Version: 1.0
+#
+# Description: print the current CPU usage
+#===================================================
 read cpu a b c previdle rest < /proc/stat
 prevtotal=$((a+b+c+previdle))
 sleep 0.5
