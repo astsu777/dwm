@@ -1,12 +1,13 @@
 #!/usr/bin/env sh
-#===================================================
-# Author: Gaetan (gaetan@ictpourtous.com)
-# Creation: Sat Aug 2021 21:52:31
-# Last modified: Sat Aug 2021 21:52:31
+#=========================================================================
+# Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
+# Creation: Sun 22 Aug 2021 12:26:03
+# Last modified: Sun 22 Aug 2021 12:26:09
 # Version: 1.0
 #
 # Description: print the current date and time
-#===================================================
+#=========================================================================
+
 dte="$(date +"%a %B %d %R"| sed 's/  / /g')"
 icon="🕒"
 printf "%s %s\n" "$dte"

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-#===================================================
-# Author: Gaetan (gaetan@ictpourtous.com)
-# Creation: Sun Aug 2021 11:17:11
-# Last modified: Sun Aug 2021 11:17:11
+#=========================================================================
+# Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
+# Creation: Sun 22 Aug 2021 12:25:39
+# Last modified: Sun 22 Aug 2021 12:25:47
 # Version: 1.0
 #
 # Description: DWM status bar script
-#===================================================
+#=========================================================================
 
 #=======================
 # Modules running every hour
