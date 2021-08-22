@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:23:12
-# Last modified: Mon 23 Aug 2021 00:01:45
+# Last modified: Sun 22 Aug 2021 23:59:43
 # Version: 1.0
 #
 # Description: DWM status bar script
@@ -28,7 +28,7 @@ done &
 while true; do
 	if sensors | grep temp > /dev/null 2>&1 && [ -f /sys/class/power_supply/BAT?*/charge_now ]; then
 		if [ -f /tmp/dwmupdates.txt ] && [ -f /tmp/dwmnews.txt ] && [ -f /tmp/dwmweather.txt ]; then
-			xsetroot -name " $(< /tmp/dwmupdates.txt)  $(< /tmp/dwmnews.txt)  $(dwmcpu)  $(dwmmemory)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmbattery)  $(dwmvol)  $(< /tmp/dwmweather.txt)  $(dwmclock)"
+			xsetroot -name " $(</tmp/dwmupdates.txt)  $(</tmp/dwmnews.txt)  $(dwmcpu)  $(dwmmemory)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmbattery)  $(dwmvol)  $(</tmp/dwmweather.txt)  $(dwmclock)"
 		elif [ -f /tmp/dwmupdates.txt ] && [ -f /tmp/dwmnews.txt ]; then
 			xsetroot -name " $(< /tmp/dwmupdates.txt)  $(< /tmp/dwmnews.txt)  $(dwmcpu)  $(dwmmemory)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmbattery)  $(dwmvol)  $(dwmclock)"
 		elif [ -f /tmp/dwmupdates.txt ] && [ -f /tmp/dwmweather.txt ]; then

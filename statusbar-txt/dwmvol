@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:27:21
-# Last modified: Sun 22 Aug 2021 12:27:27
+# Last modified: Mon 23 Aug 2021 00:05:17
 # Version: 1.0
 #
 # Description: print the current volume level
@@ -21,4 +21,4 @@ else
 		icon="🔉"
 	fi
 fi
-printf "%s %s\\n" "V:" "$vol% "
+printf "%s %s\\n" "V:" "$vol%"

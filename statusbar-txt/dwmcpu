@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:26:12
-# Last modified: Sun 22 Aug 2021 12:26:18
+# Last modified: Mon 23 Aug 2021 00:04:25
 # Version: 1.0
 #
 # Description: print the current CPU usage
@@ -15,4 +15,4 @@ read cpu a b c idle rest < /proc/stat
 total=$((a+b+c+idle))
 cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
 icon="🖥"
-printf "%s %s \\n" "C:" "$cpu%"
+printf "%s %s\\n" "C:" "$cpu%"

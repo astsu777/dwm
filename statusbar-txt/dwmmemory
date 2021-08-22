@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:26:38
-# Last modified: Sun 22 Aug 2021 12:26:43
+# Last modified: Mon 23 Aug 2021 00:04:37
 # Version: 1.0
 #
 # Description: print the current RAM usage
@@ -10,4 +10,4 @@
 
 usage=$(free -t | awk 'NR == 2 {print $3/$2*100}' | cut -d'.' -f1)
 icon="🧠"
-printf "%s %s \\n" "M:" "$usage%"
+printf "%s %s\\n" "M:" "$usage%"

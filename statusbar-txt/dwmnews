@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:26:57
-# Last modified: Sun 22 Aug 2021 12:27:02
+# Last modified: Mon 23 Aug 2021 00:04:55
 # Version: 1.0
 #
 # Description: print unread news from Newsboat
@@ -10,4 +10,4 @@
 
 news=$(newsboat -x print-unread | awk '{print $1}')
 icon="📰"
-printf "%s %s \\n"  "N:" "$news"
+printf "%s %s\\n"  "N:" "$news"

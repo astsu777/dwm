@@ -10,4 +10,4 @@
 
 usage=$(free -t | awk 'NR == 2 {print $3/$2*100}' | cut -d'.' -f1)
 icon="🧠"
-printf "%s %s \\n" "$icon" "$usage%"
+printf "%s %s\\n" "$icon" "$usage%"
