@@ -14,6 +14,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * The status bar defined with 'xsetroot' remains on a single monitor (primary one by default)
 * Supports EWMH to allow window switching with *rofi* even if a window is on another tag/monitor (window gets the focus)
 * Toggles floating/fullscreen/sticky modes for the focused window
+* Floating windows can set to open at the center of the screen using rules
 * If you want to use *DWMBlocks*, this build is already patched to work with signal updating
 
 # Dependencies
