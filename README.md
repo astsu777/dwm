@@ -15,6 +15,7 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Supports EWMH to allow window switching with *rofi* even if a window is on another tag/monitor (window gets the focus)
 * Toggles floating/fullscreen/sticky modes for the focused window
 * Floating windows can set to open at the center of the screen using rules
+* A scratchpad can be easily opened (*st* required for this to work)
 * If you want to use *DWMBlocks*, this build is already patched to work with signal updating
 
 # Dependencies
@@ -105,6 +106,7 @@ I configured the key bindings that I like. They are all configured in the *confi
 | `MODKEY + ALT + l` | locks the screen |
 | `MODKEY + CTRL + t` | displays the system tray |
 | `MODKEY + CTRL + SHIFT + t` | closes the system tray |
+| `F12` | open a scratchpad |
 
 # Status Bar
 By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several *BASH* script(s). Here is what mine looks like:
