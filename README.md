@@ -133,7 +133,7 @@ The different scripts for the bar are included in the *statusbar* folder. These 
 I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. I store all my wallpapers in a single directory and then starts *feh* when running X with the following command:
 
 ```
-feh --bg-fill --no-fehbg --randomize <PATH_TO_WALLPAPERS_DIRECTORY>
+feh --bg-scale --no-fehbg --randomize <PATH_TO_WALLPAPERS_DIRECTORY>
 ```
 
 If you want a set of nice wallpapers, I have some stored in this [repository](https://github.com/GSquad934/wallpapers).
