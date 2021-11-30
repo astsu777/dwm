@@ -2,28 +2,33 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:23:27
-# Last modified: Sun 22 Aug 2021 12:23:35
+# Last modified: Tue 30 Nov 2021 17:52:01
 # Version: 1.0
 #
 # Description: loop through all attached batteries and format the info
 #=========================================================================
 
-if [ -f /sys/class/power_supply/BAT?*/charge_now ]; then
+if [ -f /sys/class/power_supply/BAT?*/capacity ]; then
 	for battery in /sys/class/power_supply/BAT?*; do
 		# If non-first battery, print a space separator.
 		[ -n "${capacity+x}" ] && printf " "
 		# Sets up the status and capacity
-		case "$(cat "$battery/status")" in
+		case "$(cat "$battery/status" 2>&1)" in
 			"Full") status="⚡" ;;
 			"Discharging") status="🔋" ;;
 			"Charging") status="🔌" ;;
 			"Not charging") status="🛑" ;;
 			"Unknown") status="♻️" ;;
+			*) exit 1 ;;
 		esac
-		capacity=$(bc -l <<< "scale=2; $(cat $battery\/charge_now) / $(cat $battery\/charge_full) * 100" | cut -d'.' -f1)
+		if type acpi >/dev/null 2>&1; then
+			capacity=$(acpi -b | awk '{print substr($4, 1, length($4)-2)}')
+		else
+			capacity="$(cat "$battery/capacity" 2>&1)"
+		fi
 		# Will make a warn variable if discharging and low
 		[ "$status" = "🔋" ] && [ "$capacity" -le 25 ] && warn="❗"
 		# Prints the info
-		printf "%s %s%d%%" "$status" "$warn" "$capacity"; unset warn
-	done && exit 0
+		printf "%s%s%d%%" "$status" "$warn" "$capacity"; unset warn
+	done && printf "\\n"
 fi
