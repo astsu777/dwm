@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:23:27
-# Last modified: Tue 30 Nov 2021 17:53:22
+# Last modified: Tue 30 Nov 2021 19:35:07
 # Version: 1.0
 #
 # Description: loop through all attached batteries and format the info
@@ -22,7 +22,7 @@ if [ -f /sys/class/power_supply/BAT?*/capacity ]; then
 			*) exit 1 ;;
 		esac
 		if type acpi >/dev/null 2>&1; then
-			capacity=$(acpi -b | awk '{print substr($4, 1, length($4)-2)}')
+			capacity=$(acpi -b | awk '{print substr($4, 1, length($4)-1)}')
 		else
 			capacity="$(cat "$battery/capacity" 2>&1)"
 		fi
