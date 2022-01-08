@@ -1,4 +1,4 @@
-# My build of DWM v6.2
+# My build of DWM v6.3
 ![](https://i.postimg.cc/HsPmxQYW/screenshot-20210324-008.png)
 
 This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
@@ -8,7 +8,6 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Multiple layouts are available: tile (master/stack), monocle, bottom stack + horizontal, centered master, spiral, dwindle, deck, grid (+ horizontal) and floating
 * Adjustable bar height
 * Ability to configure different layouts per tag
-* Window swallowing. Example: a GUI program launched from the terminal will result in the terminal window to be hidden
 * Ability to rotate windows in the stack (easy to re-arrange windows in any layouts)
 * Ability to display colored unicode characters such as emoticons
 * The status bar defined with 'xsetroot' remains on a single monitor (primary one by default)
@@ -16,7 +15,6 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Toggles floating/fullscreen/sticky modes for the focused window
 * Floating windows can set to open at the center of the screen using rules
 * A scratchpad can be easily opened (*st* required for this to work)
-* If you want to use *DWMBlocks*, this build is already patched to work with signal updating
 
 # Dependencies
 The following packages are necessary in order to run this build of DWM properly:
