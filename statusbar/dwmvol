@@ -2,14 +2,20 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @GaetanICT
 # Creation: Sun 22 Aug 2021 12:25:15
-# Last modified: Sun 22 Aug 2021 12:25:20
+# Last modified: Fri 11 Mar 2022 23:18:45
 # Version: 1.0
 #
 # Description: print the current volume level
 #=========================================================================
 
-vol="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
-state="$(amixer get Master | tail -n1 | awk '{print $6}')"
+if type pactl >/dev/null 2>&1; then
+	state="$(amixer get Master | tail -n1 | awk '{print $6}')"
+	vol="$(pactl get-sink-volume 0 | head -n1 | awk '{print $5}' | sed -r 's/\%//')"
+else
+	state="$(amixer get Master | tail -n1 | awk '{print $6}')"
+	vol="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
+fi
+
 if [ "$state" = "[off]" ]; then
 	icon="🔇"
 else
@@ -21,4 +27,5 @@ else
 		icon="🔉"
 	fi
 fi
+
 printf "%s %s\\n" "$icon" "$vol%"
