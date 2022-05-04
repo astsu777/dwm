@@ -44,6 +44,7 @@ static const Rule rules[] = {
 	{ NULL,    	 		NULL,     	"galculator",       	0,			0,          1,          -1 },
 	{ NULL,    	 		NULL,     	"mpv floating",			0,			0,         	1,          -1 },
 	{ NULL,    	 		NULL,     	"mpvfloating",       	0,			0,         	1,          -1 },
+	{ "Tor Browser",  	NULL,     	NULL,       			0,			0,         	1,          -1 },
 	{ NULL,      		NULL,     	"Event Tester", 		0,			0,         	0,          -1 }, /* xev */
 };
 
