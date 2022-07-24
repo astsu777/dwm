@@ -38,6 +38,8 @@ static const Rule rules[] = {
 	 */
 	/* class      		instance    title       			tags mask   iscentered  isfloating  monitor */
 	{ "Gimp",    		NULL,     	NULL,           		0,         	0,			1,          -1 },
+	{ "vmrc",    		NULL,     	NULL,           		0,         	0,			1,          -1 },
+	{ "Vmrc",    		NULL,     	NULL,           		0,         	0,			1,          -1 },
 	{ "fzfmenu",    	NULL,     	NULL,           		0,         	1,			1,          -1 },
 	{ NULL,    	 		NULL,     	"Picture-in-Picture",	0,			0,			1,          -1 },
 	{ NULL,    	 		NULL,     	"Picture in picture",	0,			0,          1,          -1 },
