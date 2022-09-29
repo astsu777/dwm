@@ -32,7 +32,7 @@ The following software are not mandatory but recommended:
 
 If you don't want to use custom emoji in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. Every option can be customized by modifying the *config.def.h* file.
 
-If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/GSquad934/dmenu). You can also check out [my build of ST](https://github.com/GSquad934/st) for a nice terminal emulator. Finally, [my build of *slock*](https://github.com/GSquad934/slock) can be used as a nice lock screen.
+If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/astsu777/dmenu). You can also check out [my build of ST](https://github.com/astsu777/st) for a nice terminal emulator. Finally, [my build of *slock*](https://github.com/astsu777/slock) can be used as a nice lock screen.
 
 # Installation
 If you don't use my dotfiles, it is necessary to configure DWM to launch your preferred applications. In order to do this, modify the *config.def.h* file and look at the section starting at line **#162**: there are commented lines with several examples of applications (GUI & TUI). Simply modify these lines (and uncomment them) and adjust the key binding/commands to run. Everything is commented out because I actually use *SXHKD* to manage my applications.
@@ -40,15 +40,15 @@ If you don't use my dotfiles, it is necessary to configure DWM to launch your pr
 Once you are ready to install DWM, type the following commands:
 
 ```
-git clone --depth 1 https://github.com/GSquad934/dwm.git
+git clone --depth 1 https://github.com/astsu777/dwm.git
 cd dwm
 sudo make clean install
 ```
 
-<u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap script](https://github.com/GSquad934/bootstrap).
+<u>**Note**</u>: this DWM installation can be fully automated by using my [bootstrap script](https://github.com/astsu777/bootstrap).
 
 # Running DWM
-If you don't use a login manager, you can start the graphical environment with the *startx* command (package "*xorg-xinit*" required) and a properly configured *.xinitrc* file. If you want some inspiration for your *.xinitrc*, you can check out [mine](https://github.com/GSquad934/dotfiles/blob/master/config/X11/xinitrc).
+If you don't use a login manager, you can start the graphical environment with the *startx* command (package "*xorg-xinit*" required) and a properly configured *.xinitrc* file. If you want some inspiration for your *.xinitrc*, you can check out [mine](https://github.com/astsu777/dotfiles/blob/master/config/X11/xinitrc).
 
 If you use a login manager (such as *lightdm*), make sure to create a *dwm.desktop* file in */usr/share/xsessions/*. The file should contain the following:
 
@@ -134,10 +134,10 @@ I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. 
 feh --bg-scale --no-fehbg --randomize <PATH_TO_WALLPAPERS_DIRECTORY>
 ```
 
-If you want a set of nice wallpapers, I have some stored in this [repository](https://github.com/GSquad934/wallpapers).
+If you want a set of nice wallpapers, I have some stored in this [repository](https://github.com/astsu777/wallpapers).
 
 # Contact
 You can always reach out to me:
 
-* [Twitter](https://twitter.com/gaetanict)
+* [Twitter](https://twitter.com/astsu777)
 * [Email](mailto:gaetan@ictpourtous.com)
