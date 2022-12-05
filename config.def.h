@@ -10,15 +10,14 @@ static const unsigned int gappov    = 6;       /* vert outer gap between windows
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const int user_bh            =22;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]   	    = { "JetBrains Mono Medium:size=9:antialias=true:autohint=true", "Noto Color Emoji:size=8:antialias=true:autohint=true" };
+static const char *fonts[]          = { "JetBrains Mono Medium:size=9:antialias=true:autohint=true", "Noto Color Emoji:size=8:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrains Mono Medium:size=9:antialias=true:autohint=true";
-static const char col_gray1[]       = "#282c34";
-static const char col_gray2[]       = "#282c34";
-static const char col_gray3[]       = "#d7d7d7";
-static const char col_gray4[]       = "#d7d7d7";
+static const char col_gray1[]       = "#282C34";
+static const char col_gray2[]       = "#282C34";
+static const char col_gray3[]       = "#D7D7D7";
+static const char col_gray4[]       = "#D7D7D7";
 static const char col_cyan[]        = "#304569";
-static const char col_border[]        = "#304569";
+static const char col_border[]      = "#304569";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -36,7 +35,7 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      		instance    title       			tags mask   iscentered  isfloating  monitor */
+	/* class      instance    title       tags mask     iscentered   isfloating   monitor */
 	{ "Gimp",    		NULL,     	NULL,           		0,         	0,			1,          -1 },
 	{ "vmrc",    		NULL,     	NULL,           		0,         	0,			1,          -1 },
 	{ "Vmrc",    		NULL,     	NULL,           		0,         	0,			1,          -1 },
@@ -90,13 +89,12 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]    = { "dmenu_run", "-p", "Launch: ", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-p", "Launch: ", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
-static Key keys[] = {
+static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	/* WINDOW MANAGEMENT */
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = dmenucmd } },
@@ -166,10 +164,9 @@ static Key keys[] = {
 	/* { MODKEY|Mod1Mask|ShiftMask, XK_m,      spawn,          CMD("ferdi") }, */
 };
 
-/* MOUSE KEYBINDIGS */
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
-static Button buttons[] = {
+static const Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
@@ -183,3 +180,4 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+

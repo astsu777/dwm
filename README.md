@@ -1,7 +1,7 @@
-# My build of DWM v6.3
+# My build of DWM v6.4
 ![](https://i.postimg.cc/HsPmxQYW/screenshot-20210324-008.png)
 
-This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
+This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.4 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
 * Only active tags are visible (9 are available on every screen)
 * Resizable gaps between screen edges and windows that can be toggled/resized with key bindings
@@ -21,7 +21,7 @@ The following packages are necessary in order to run this build of DWM properly:
 
 * ttf-jetbrains-mono
 * noto-fonts-emoji
-* libxft-bgra (regular *libxft* won't work if you use my status bar --> DWM will crash)
+* libxft
 
 The following software are not mandatory but recommended:
 
@@ -29,8 +29,6 @@ The following software are not mandatory but recommended:
 * st (hard-coded terminal emulator)
 * trayer (optional, only if you want a system tray)
 * slock (optional, only if you want a lock screen)
-
-If you don't want to use custom emoji in the status bar, there is no need for package *libxft-bgra* (the standard *libxft* would suffice). *st* and *dmenu* are very recommended because those programs are hard-coded in my DWM configuration. Every option can be customized by modifying the *config.def.h* file.
 
 If you want a nice DMenu to be integrated, you can install [my custom build](https://github.com/astsu777/dmenu). You can also check out [my build of ST](https://github.com/astsu777/st) for a nice terminal emulator. Finally, [my build of *slock*](https://github.com/astsu777/slock) can be used as a nice lock screen.
 
@@ -125,7 +123,7 @@ By default, DWM has a very plain bar with almost no information in it. The statu
 
 The different scripts for the bar are included in the *statusbar* folder. These scripts must be in your *$PATH* for the status bar to work. The script called *dwmbar* is the one launching the status bar (add it to either your *.xinitrc*/*.profile*/*.xprofile* file) while all the other ones are used to retrieve the different information.
 
-<u>**Note**</u>: the folder called *statusbar-txt* contain script that will only display text and no emoji. This is useful on systems where *libxft-bgra* cannot be installed.
+<u>**Note**</u>: the folder called *statusbar-txt* contain script that will only display text and no emoji.
 
 # Wallpapers
 I use *feh* to setup my wallpapers randomly as it is the simplest way to do it. I store all my wallpapers in a single directory and then starts *feh* when running X with the following command:
