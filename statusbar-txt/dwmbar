@@ -2,7 +2,7 @@
 #=========================================================================
 # Author: Gaetan (gaetan@ictpourtous.com) - Twitter: @astsu777
 # Creation: Sun 22 Aug 2021 12:23:12
-# Last modified: Mon 04 Dec 2023 17:57:09
+# Last modified: Tue 05 Dec 2023 12:54:46
 # Version: 1.0
 #
 # Description: DWM status bar script
@@ -36,7 +36,7 @@ while true; do
 		# elif [ -f /tmp/dwmupdates.txt ]; then
 		# 	xsetroot -name " $(< /tmp/dwmupdates.txt)  $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmbattery)  $(dwmvol)  $(dwmclock)"
 		# else
-			xsetroot -name " $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmvol)  $(dwmclock)"
+		xsetroot -name " $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmbattery)  $(dwmvol)  $(dwmclock)"
 		# fi
 	elif sensors | grep temp > /dev/null 2>&1; then
 		# if [ -f /tmp/dwmupdates.txt ] && [ -f /tmp/dwmnews.txt ] && [ -f /tmp/dwmweather.txt ]; then
@@ -48,7 +48,7 @@ while true; do
 		# elif [ -f /tmp/dwmupdates.txt ]; then
 		# 	xsetroot -name " $(< /tmp/dwmupdates.txt)  $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmvol)  $(dwmclock)"
 		# else
-			xsetroot -name " $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmvol)  $(dwmclock)"
+		xsetroot -name " $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmtemp)  $(dwmvol)  $(dwmclock)"
 		# fi
 	elif [ -f /sys/class/power_supply/BAT?*/capacity ]; then
 		# if [ -f /tmp/dwmupdates.txt ] && [ -f /tmp/dwmnews.txt ] && [ -f /tmp/dwmweather.txt ]; then
@@ -60,7 +60,7 @@ while true; do
 		# elif [ -f /tmp/dwmupdates.txt ]; then
 		# 	xsetroot -name " $(< /tmp/dwmupdates.txt)  $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmbattery)  $(dwmvol)  $(dwmclock)"
 		# else
-			xsetroot -name " $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmvol)  $(dwmclock)"
+		xsetroot -name " $(dwmcpu)  $(dwmmemory)  $(dwminternet)  $(dwmnet)  $(dwmdisk)  $(dwmbattery)  $(dwmvol)  $(dwmclock)"
 		# fi
 	else
 		# if [ -f /tmp/dwmupdates.txt ] && [ -f /tmp/dwmnews.txt ] && [ -f /tmp/dwmweather.txt ]; then
