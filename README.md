@@ -1,7 +1,7 @@
-# My build of DWM v6.4
+# My build of DWM v6.5
 ![](https://i.postimg.cc/HsPmxQYW/screenshot-20210324-008.png)
 
-This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.4 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
+This repository hosts the source code of my build of DWM (Dynamic Window Manager) made by [Suckless software](https://dwm.suckless.org/). It is based on DWM v6.5 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
 * Only active tags are visible (9 are available on every screen)
 * Resizable gaps between screen edges and windows that can be toggled/resized with key bindings
@@ -14,7 +14,6 @@ This repository hosts the source code of my build of DWM (Dynamic Window Manager
 * Supports EWMH to allow window switching with *rofi* even if a window is on another tag/monitor (window gets the focus)
 * Toggles floating/fullscreen/sticky modes for the focused window
 * Floating windows can set to open at the center of the screen using rules
-* A scratchpad can be easily opened (*st* required for this to work)
 
 # Dependencies
 The following packages are necessary in order to run this build of DWM properly:
@@ -102,7 +101,6 @@ I configured the key bindings that I like. They are all configured in the *confi
 | `MODKEY + ALT + l` | locks the screen |
 | `MODKEY + CTRL + t` | displays the system tray |
 | `MODKEY + CTRL + SHIFT + t` | closes the system tray |
-| `F12` | open a scratchpad |
 
 # Status Bar
 By default, DWM has a very plain bar with almost no information in it. The status bar can be customized with one/several *BASH* script(s). Here is what mine looks like:
